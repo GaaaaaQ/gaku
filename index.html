@@ -8,22 +8,23 @@
   <link rel="shortcut icon" type="image/png" href="icon1.png">
 </head>
 <body>
+  <div id="root"></div>
   <header>
     <div class="container">
       <div class="header-left">
-        <img src="logo1.png">
+        <img src="logo1.png" style="width: 184px; height: 65px;">
       </div>
       <span class="fa fa-bars menu-icon"></span>
       <div class="header-right">
         <a href="#">オッズ</a>
         <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
+        <a href="mypage.html" class="login">ログイン</a>
       </div>
     </div>
   </header>
   <div class="top-wrapper">
     <div class="container">
-       <h1>今日の試合はどっちが勝つだろう？<br>他のみんなはどう予想してるんだろう？</h1>
+      <h1>今日の試合はどっちが勝つだろう？<br>他のみんなはどう予想してるんだろう？</h1>
       <p>Gazerは新感覚の勝敗予想プラットフォームです。<br>好きな試合の勝敗を予想し、みんなで議論しよう！</p>
       <div class="btn-wrapper">
         <a href="#" class="btn signup">新規登録はこちら</a>
@@ -65,9 +66,10 @@
     <div class="container">
       <div class="heading">
         <h2>さぁ、あなたもGazerで試合を予想してみませんか?</h2>
-        <h3>Let's gaze the future!</h3>
+        <h3>Lets gaze the future!</h3>
       </div>
-      <span class="btn message">さっそく予想する</span>
+      <label for="expecting" class="btn message">さっそく予想する</label>
+      <input id="expecting" class="expectGame" type="submit" onclick="yosouButton()"/>
     </div>
   </div>
   <footer>
@@ -75,5 +77,14 @@
       <p>Gaze the future.</p>
     </div>
   </footer>
+  <script>
+    function yosouButton(){
+      window.location.href = 'gazing.html';
+    }
+
+
+
+
+  </script>
 </body>
 </html>
